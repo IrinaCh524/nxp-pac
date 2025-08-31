@@ -94,3 +94,33 @@ transforms:
   - !Delete
     from: syscon::regs::Presetctrlx\d
 
+  - !MergeEnums
+    from: iocon::vals::Pio\d{2,3}Asw
+    to: iocon::vals::PioAsw
+  - !MergeEnums
+    from: iocon::vals::Pio\d{2,3}Digimode
+    to: iocon::vals::PioDigimode
+  - !MergeEnums
+    from: iocon::vals::Pio\d{2,3}Func
+    to: iocon::vals::PioFunc
+  - !MergeEnums
+    from: iocon::vals::Pio\d{2,3}Mode
+    to: iocon::vals::PioMode
+  - !MergeEnums
+    from: iocon::vals::Pio\d{2,3}Od
+    to: iocon::vals::PioOd
+  - !MergeEnums
+    from: iocon::vals::Pio\d{2,3}Slew
+    to: iocon::vals::PioSlew
+  - !MergeEnums
+    from: iocon::vals::Pio\d{2,3}Ssel
+    to: iocon::vals::PioSsel
+  - !MergeEnums
+    from: iocon::vals::Pio\d{2,3}I2cfilter
+    to: iocon::vals::PioI2cfilter
+  - !MergeEnums
+    from: iocon::vals::Pio\d{2,3}Filteroff
+    to: iocon::vals::PioFilteroff
+  - !MergeEnums
+    from: iocon::vals::Pio\d{2,3}Egp
+    to: iocon::vals::PioEgp
